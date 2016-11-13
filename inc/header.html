@@ -1,28 +1,66 @@
-<div class="col-md-12 col-sm-12">
-    <img src="/images/stringOfNucleiFilter.jpg" style="width: 100%; height: 75%;" />
-    <div class="row">
-        <div class="col-md-4 col-sm-4">
-            <img id="leftImg" src="/images/selfie 1.JPG" class="img-rounded" style="height:120px; width:200px; -ms-transform: rotate(90deg);-webkit-transform: rotate(90deg);transform: rotate(90deg);" />
-        </div>
-        <div class="col-md-4 col-sm-4">
-            <h1>EX VIVO</h1>
-        </div>
-        <div class="col-md-4 col-sm-4">
-            <a href="page.html" style="font-size: 150%"><strong>BLOG</strong></a><br />
-            <a href="page.html" style="font-size: 150%"><strong>MISSION</strong></a><br />
-            <a href="page.html" style="font-size: 150%"><strong>RESEARCH</strong></a><br />
-            <a href="page.html" style="font-size: 150%"><strong>AFFILIATES</strong></a><br />
-            <a href="page.html" style="font-size: 150%"><strong>CONTACT</strong></a><br />
-        </div>
-    </div>    
-</div>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<script>
-    $(document).ready(function(){
-        if(location.pathname === "/index.html")
-        {
-            $("#imgLeft").attr('src', "/images/selfie 1.JPG");
-        }
-    });
-</script>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+		
+
+		<title>
+			Jess Kreiger
+		</title>
+	</head>
+	<body>
+		<div class="container container-fluid">
+			<div class="row">
+
+
+                <div class="col-md-12 col-sm-12">
+                    <img src="/images/stringOfNucleiFilter.jpg" style="width: 90%; height: 480px;" />
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4">
+                            <img id="leftImg" src="/images/selfie 1.JPG" class="img-rounded" style="height:120px; width:200px; -ms-transform: rotate(90deg);-webkit-transform: rotate(90deg);transform: rotate(90deg);" />
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <h1>EX VIVO</h1>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <a href="page.html" style="font-size: 150%"><strong>BLOG</strong></a><br />
+                            <a href="page.html" style="font-size: 150%"><strong>MISSION</strong></a><br />
+                            <a href="page.html" style="font-size: 150%"><strong>RESEARCH</strong></a><br />
+                            <a href="page.html" style="font-size: 150%"><strong>AFFILIATES</strong></a><br />
+                            <a href="page.html" style="font-size: 150%"><strong>CONTACT</strong></a><br />
+                        </div>
+                    </div>    
+                </div>
+
+                <script>
+                    $(document).ready(function(){
+                        if(location.pathname === "/index.html")
+                        {
+                            $("#imgLeft").attr('src', "/images/selfie 1.JPG");
+                            $("#imgLeft").attr('style', "height:120px; width:200px; -ms-transform: rotate(90deg);-webkit-transform: rotate(90deg);transform: rotate(90deg);")
+                        }
+                        else if(location.pathname === "/mission.html")
+                        {
+                            $("#imgLeft").attr('src', "/images/mission.png");
+                        }
+                        else if(location.pathname === "/research.html")
+                        {
+                            $("#imgLeft").attr('src', "/images/research.png");
+                        }
+                        else if(location.pathname === "/affiliates.html")
+                        {
+                            $("#imgLeft").attr('src', "/images/affiliates.png");
+                        }
+                        else if(location.pathname === "/contact.html")
+                        {
+                            $("#imgLeft").attr('src', "/images/contact.png");
+                        }
+                    });
+                </script>
 
