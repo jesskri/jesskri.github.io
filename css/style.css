@@ -1,0 +1,9 @@
+@media (max-width:500px){
+        h1 {
+            transform:translate(0px,150px);
+        }
+
+        div#links{
+            transform:translate(0px,0px);
+        }
+    }
