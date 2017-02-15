@@ -58,3 +58,8 @@
 
     }
 
+@media (max-width:330px){
+        .openBtn{
+            transform:translate(0px,150px);
+        }
+    }
