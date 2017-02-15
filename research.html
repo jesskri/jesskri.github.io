@@ -24,26 +24,28 @@
 						<div class="col-md-4 col-sm-4 col-xs-4">
 							<img id="imgLeft" src="images/research.png" class="img-rounded" style="height:140px; width:200px; transform:translate(15px,-20px);" />
 						</div>
-						<div class="col-md-4 col-sm-4 col-xs-4 text-center">
+						<div class="col-md-4 col-sm-4 col-xs-4 text-center siteTitle">
 							<h1>EX VIVO</h1>
 						</div>
-						<div class="col-md-4 col-sm-4 col-xs-4" style="text-align: right;">
-							<a href="index.html" style="font-size: 180%;"><strong>BLOG</strong></a><br />
-							<a href="mission.html" style="font-size: 180%;"><strong>MISSION</strong></a><br />
-							<a href="research.html" style="font-size: 180%;"><strong>RESEARCH</strong></a><br />
-							<a href="affiliates.html" style="font-size: 180%;"><strong>AFFILIATES</strong></a><br />
-							<a href="contact.html" style="font-size: 180%;"><strong>CONTACT</strong></a><br />
+						<span style="font-size:30px;cursor:pointer; text-align: left;" onclick="openNav()" class="openBtn">&#9776;Menu</span>
+						<div id="links" class="col-md-4 col-sm-4 col-xs-4 sidenav" style="text-align: right; margin-right:0px; margin-left:0px; padding-right: 0px; padding-left: 0px;">
+							<a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+							<a href="index.html" style="font-size: 180%; text-align: right;"><strong>BLOG</strong></a><br />
+							<a href="mission.html" style="font-size: 180%; text-align: right;"><strong>MISSION</strong></a><br />
+							<a href="research.html" style="font-size: 160%; text-align: right;"><strong>RESEARCH</strong></a><br />
+							<a href="affiliates.html" style="font-size: 160%; text-align: right;"><strong>AFFILIATES</strong></a><br />
+							<a href="contact.html" style="font-size: 180%; text-align: right;"><strong>CONTACT</strong></a><br />
 						</div>
 					</div>    
 				</div>
 
 			</div>
-
+			<br><br>
 			<!--body content-->
-			<div class="row">
+			<div class="row outerBody">
 						<div class="row">
 							<div class="col-md-12 col-sm-12 col-xs-12 text-left">
-								<p style="font-size: 150%;">My in vitro meat research has three main aims: 1) Close the
+								<p style="font-size: 150%; text-align: center;">My in vitro meat research has three main aims: 1) Close the
 gap in similarity between in vitro meat and livestock meat, 2)
 Develop muscle cell isolation methods for different species,
 such as pigs and lobsters, 3) Develop a suitable bioreactor
@@ -147,7 +149,15 @@ methods.
 	<script>
 		w3IncludeHTML();
 	</script>
+	<script>
+		function openNav() {
+			document.getElementById("links").style.width = "200px";
+		}
 
+		function closeNav() {
+			document.getElementById("links").style.width = "0";
+		}
+	</script>
 
 	</body>
 </html>
